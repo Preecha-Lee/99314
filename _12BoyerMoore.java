@@ -31,7 +31,7 @@ public class _12BoyerMoore {
             while (j <= m && (P.charAt(i - 1) != P.charAt(j - 1))) {
                 if (fs[j][1] == 0) {
                     fs[j][1] = j - i;
-                    //System.out.println("s[" + j + "] = " + fs[j][1]);
+                    // System.out.println("s[" + j + "] = " + fs[j][1]);
                 }
 
                 j = fs[j][0];
@@ -98,7 +98,7 @@ public class _12BoyerMoore {
     }
 
     public static void main(String[] args) {
-        String P = "*bbabab";
+        String P = "abbabab";
         String T = "fvgg*bbababaaababbababdda";
 
         boyerMoore(T, P);
